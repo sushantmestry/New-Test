@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="lightpink">
+    
+        <h2><strong>Select your Dream Player</strong></h2>
+        <table align="center">
+            <tbody >
+            <tr >
+                <td style="background-color: aquamarine; color: aquamarine;"><input type="Submit" name="Submit" value="Create"></td>
+                <td><input type="Reset" name="Reset" value="Reset"></td>
+                <td><input type="submit" name="Back" value="Back" href="/"></td>
+            </tr>
+            
+        </tbody>
+
+        </table>
+        <table border="1px" style="background-color: aliceblue; padding: 5px;" align="center" >
+            <tr style="background-color: rgb(69, 230, 168);">
+                    <th>player_id</th>
+                <th>player_name</th>
+                <th>Action</th>
+                
+            </tr>
+
+
+            {% for i in elist %}
+                    <tr>
+                        <td style="color: rgb(184, 83, 46);">{{i[0]}}</td>
+                        <td>{{i[1]}}</td>
+                     <td><input type="checkbox" class="btn btn-primary btn-lg" value="Select"><a href="#">Select</a></button></td>
+                </tr>
+            {% endfor %}    
+    
+</body>
+</html>

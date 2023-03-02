@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body background="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/meadow-in-rocky-mountain-national-park-royalty-free-image-1592402262.jpg">
+	<div class="topnav">
+		
+		<div class="head" style="font-size: larger; color: rgb(34, 32, 33); padding: 30px;padding-left: 500px;">
+    
+			<img itemprop="image" width="290" height="107" alt="light logo" data-src="https://a5econsulting.com/wp-content/uploads/2022/01/A5E-Logo-new-01.png" class="qodef-light-logo lazyloaded" src="https://a5econsulting.com/wp-content/uploads/2022/01/A5E-Logo-new-01.png">
+		</div>
+	
+		<div class="heading" style="color: rgb(8, 7, 7);">
+			<h1>Welcome to A5E <u><mark>Super 11 League</mark></u> </h1>
+		</div>
+			<h2><strong>Select your Team</strong></h2>
+			<table border="1px" style="background-color: aliceblue;" >
+    			<tr style="background-color: rgb(69, 230, 168);">
+       				 <th>team_id</th>
+        			<th>team_name</th>
+					<th>Action</th>
+        			
+    			</tr>
+    
+
+    			{% for i in elist %}
+       				 <tr>
+           				 <td style="color: rgb(184, 83, 46);">{{i[0]}}</td>
+           				 <td>{{i[1]}}</td>
+            			 
+							<td><button type="button" class="btn btn-primary btn-lg"><a href="/log">Show</a></button>
+							<button type="button" class="btn btn-primary btn-lg" style="background-color: aquamarine;"><a href="/player">Create Team</a></button></td>
+
+						</tr>
+    			{% endfor %}    
+
+			</table>
+			<h2>    <button type="button" class="btn btn-primary btn-lg" style="background-color: rgb(99, 224, 224); align-self: center; height: 40px;text-align: center; "><a href="/">Home_page</a></button></h2>	
+
+	</div>
+</body>
+</html>
